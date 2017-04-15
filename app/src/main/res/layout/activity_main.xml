@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context="haitong.yht.flipcards.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/banker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="500px"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150px"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/deck"
+        android:layout_width="225px"
+        android:layout_height="315px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/card_back" />
+
+    <RelativeLayout
+        android:id="@+id/process_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/hit"
+            android:layout_width="300px"
+            android:layout_height="120px"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="hit"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stand"
+            android:layout_width="300px"
+            android:layout_height="120px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@+id/hit"
+            android:background="@android:color/white"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="stand"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fold"
+            android:layout_width="300px"
+            android:layout_height="120px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@+id/hit"
+            android:background="@android:color/white"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="fold"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>
